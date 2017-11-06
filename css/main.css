@@ -1,8 +1,3 @@
-/*gris_fondo:#f9f9f9
-gris_borde:#e3e3e3
-gris_texto:#7a7a7a
-boton:#bcc9d8*/
-
 body{ 
 	background-color: #f9f9f9; 
 	font-family: 'Dosis', sans-serif;
@@ -29,40 +24,38 @@ body{
 	margin-right: 0.7em;
 	z-index: 1;
 }
-.cabecera, .comentario p{ background-color: #fff; }
-
-.comentario p {
+.cabecera, .comentario p , .comentario button{ 
+	background-color: #fff; 
 	border: 1px solid #eee;
-	border-top: 0;
-	font-size: 15px;
-	line-height: 1.5;
 	padding: .5em;
 }
-
+.comentario p {
+	border-top: 0;
+	line-height: 1.5;
+}
 .cabecera {
 	border-radius: 10px 10px 0px 0px;
-	border: 1px solid #eee;
-	padding: .5em;
 	align-items: end;
 }
-
 .cabecera h1{
 	color: #03658c;
 	font-size: 14px;
 	width: 100%;
 
 }
-
 .cabecera span {
 	font-size: 12px;
-	float: right;
 	margin-right: 10px;
 	font-style: li;
 	font-weight: 100;
 }
+
+.cabecera span , .comentario button{
+	float: right;
+}
 .comentario p, .cabecera span, .icon-like, .icon-nolike{ color: #7a7a7a; }
 
-.icon-like,.icon-nolike{ font-size: 15px; }
+.comentario, .icon-like,.icon-nolike{ font-size: 15px; }
 
 .icon-like:hover, .icon-nolike:hover{ color: red; }
 
@@ -70,9 +63,7 @@ body{
 	background-color: #bcc9d8;
 	border-radius: 1px;
 	color: #fff;
-	float: right;
 	font-size: 13.5px;
-	padding: .5em;
 }
 
 .respuesta {
@@ -89,4 +80,6 @@ button[class="icon-clip"],
 button[class="icon-img"]{
 	background-color: transparent;
 	color: #bcc9d8;
+	border: none;
+	outline: none;
 }
